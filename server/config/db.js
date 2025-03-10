@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   await mongoose
-    .connect("mongodb://localhost:27017/foodApp")
+    .connect(process.env.MONGO_URL)
     .then(() => console.log("DB Connected!"));
 };
 
