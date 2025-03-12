@@ -30,7 +30,6 @@
 
 .order-item select {
     background: #ffe8e4;
-    border: 1px solid tomato;
     border-radius: 4px;
     width: max(10vw, 120px);
     padding: 10px;
