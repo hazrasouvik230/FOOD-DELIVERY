@@ -10,7 +10,7 @@
     border: 5px solid #bdbdbd;
     border-top-color: tomato;
     border-radius: 50%;
-    animation: rotate 1px infinite;
+    animation: rotate 1s infinite;
 }
 
 @keyframes rotate {
