@@ -29,7 +29,7 @@ const Cart = () => {
                   <p>{item.name}</p>
                   <p>$ {item.price}</p>
                   <p>{cartItems[item._id]}</p>
-                  <p>$ {item.price * cartItems[item._id]}</p>
+                  <p>₹ {item.price * cartItems[item._id]}</p>
                   <p className="cross" onClick={() => removeFromCart(item._id)}>
                     x
                   </p>
@@ -46,17 +46,17 @@ const Cart = () => {
           <div>
             <div className="cart-total-details">
               <p>Subtotal</p>
-              <p>$ {getCartAmount()}</p>
+              <p>₹ {getCartAmount()}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>$ {getCartAmount() === 0 ? 0 : 2}</p>
+              <p>₹ {getCartAmount() === 0 ? 0 : 20}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>$ {getCartAmount() === 0 ? 0 : getCartAmount() + 2}</b>
+              <b>₹ {getCartAmount() === 0 ? 0 : getCartAmount() + 20}</b>
             </div>
           </div>
           <button onClick={() => navigate("/order")}>
